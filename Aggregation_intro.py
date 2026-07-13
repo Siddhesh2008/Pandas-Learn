@@ -26,3 +26,7 @@ print(group['Height'].sum())  ##This will print the sum of the values in the "He
 print(group['Height'].min())  ##This will print the minimum value in the "Height" column of the DataFrame, grouped by the values in the "Type 1" column.
 print(group['Height'].max())  ##This will print the maximum value in the "Height" column of the DataFrame, grouped by the values in the "Type 1" column.
 print(group['Height'].count())  ##This will print the count of non-null values in the "Height" column of the DataFrame, grouped by the values in the "Type 1" column.
+
+
+##to do all this at the same time
+df.groupby('Type 1').agg({'Height': ['mean', 'sum', 'min', 'max', 'count']})
