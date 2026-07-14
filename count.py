@@ -20,3 +20,5 @@ print(
 print(df["Duration"].skew())  ##This will print the skewness of the "Duration" column
 
 print(df["Duration"].kurt())  ##This will print the kurtosis of the "Duration" column
+
+print(df["Calories"].corr(df["Duration"]))
